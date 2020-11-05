@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terrorífica fiesta de Halloween</title>
+    <link rel="stylesheet" href="estilos/hawolen.css">
+     <script src="javascripts/jsc.js"></script>
+</head>
+<body onload="sonar('nana')">
+    <div id="container">
+        <audio src="sonidos/lullaby.mp3" id="nana" controls>
+
+        </audio>
+        <audio src="sonidos/grito.mp3" id="grito"> </audio>
+        <p id="titulo">Terrorífica Fiesta de Halloween</p>
+        <p id="advertencia">No toques la calabaza de la izquierda</p>
+        <img id="bats" src="imagenes/bats.gif" width="200">
+        <div id="calabaza" onmouseover="mostrar('bats');sonar('grito')"
+        onmouseout="ocultar('bats')"></div>
+    </div>
+    <div id="mano" onclick="mostrar('zombie');sonar('grito')"></div>
+    <img id="zombie" src="imagenes/elzombi.gif" 
+    onclick="ocultar('zombie');parar('grito')";>
+</body>
+</html>
